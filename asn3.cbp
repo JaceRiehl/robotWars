@@ -51,7 +51,6 @@
 		<Unit filename="src/PartsFactory.cc" />
 		<Unit filename="src/Programming.cc" />
 		<Unit filename="src/RoundRobin.cc" />
-		<Unit filename="test/Aggressive.cc" />
 		<Unit filename="test/AggressiveTest.cc" />
 		<Unit filename="test/AggressiveTest.h" />
 		<Unit filename="test/RoundRobinTest.cc" />
