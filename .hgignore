@@ -1,0 +1,9 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+syntax: glob
+./project/obj/
+./project/doxygen
+./project/ValgrindOut.xml
+*.layout
+*.depend
+*~
+*.o
