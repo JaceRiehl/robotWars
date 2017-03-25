@@ -53,6 +53,8 @@
 		<Unit filename="src/RoundRobin.cc" />
 		<Unit filename="test/AggressiveTest.cc" />
 		<Unit filename="test/AggressiveTest.h" />
+		<Unit filename="test/PartTest.cc" />
+		<Unit filename="test/PartTest.h" />
 		<Unit filename="test/RoundRobinTest.cc" />
 		<Unit filename="test/RoundRobinTest.h" />
 		<Extensions>
