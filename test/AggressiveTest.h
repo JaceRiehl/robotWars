@@ -1,8 +1,7 @@
 #ifndef AGGRESSIVETEST_H
-#define AGGRESSIVE_H
+#define AGGRESSIVETEST_H
 #include "Aggressive.h"
 #include "Parts.h"
-#include "PartsFactory.h"
 #include <vector>
 
 #include <cppunit/extensions/HelperMacros.h>
@@ -35,7 +34,7 @@ class AggressiveTest : public CppUnit::TestFixture
 
 
     private:
-        PartsFactory Factory;
+
         Aggressive strategy;
         vector<Parts> parts;
 };

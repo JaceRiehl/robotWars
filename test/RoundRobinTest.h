@@ -35,7 +35,6 @@ class RoundRobinTest : public CppUnit::TestFixture
 
 
     private:
-        PartsFactory Factory;
         RoundRobin strategy;
         vector<Parts> parts;
 };
