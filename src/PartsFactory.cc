@@ -45,3 +45,10 @@ Parts* PartsFactory::LargeRocket = nullptr;
 
      }
  }
+
+ PartsFactory::~PartsFactory()
+{
+    delete SmallRocket;
+    delete SmallLaser;
+
+}

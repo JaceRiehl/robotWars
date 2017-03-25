@@ -3,6 +3,7 @@
 #include <stdexcept>
 #include <vector>
 #include <string>
+#include "Programming.h"
 #include "Parts.h"
 using namespace std;
 using std::runtime_error;
@@ -18,12 +19,12 @@ public:
     *Adds weapons to the arms
     *@param Programming pointer to a strategy style
     */
-    void addPart(Parts);
+    void addPart(Parts*);
 private:
     /**
     *Vector of weapons
     */
-    vector<Parts> parts;
+    vector<Parts*> parts;
     /**
     *The Mechs armor
     */
@@ -43,8 +44,8 @@ private:
     /**
     *The Programming style
     */
-    //Programming* fightingStyle;
-    string fightingStyle;
+    Programming* fightingStyle;
+
     /**
     *Constructor for Mech supplied by Mech builder
     *@param Armor
@@ -52,8 +53,7 @@ private:
     *@param Arms
     *@param Fighting Style
     */
-    //Mech(int defence, int pegs, int roboArms, Programming* f) : armor(defence), legs(pegs), arms(roboArms), fightingStyle(f) {}
-    Mech(int defence, int pegs, int roboArms, string f) : armor(defence), legs(pegs), arms(roboArms), fightingStyle(f) {}
+    Mech(int defence, int pegs, int roboArms, Programming* f) : armor(defence), legs(pegs), arms(roboArms), fightingStyle(f) {}
 
 };
 #endif // MECH_H
