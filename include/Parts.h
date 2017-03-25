@@ -12,7 +12,7 @@ public:
     Parts(int, int);
     int getRechargeTime();
     int getDamage();
-    //void fire();
+
 protected:
     int damage;
     int rechargeTime;

@@ -1,5 +1,5 @@
 #include "Mech.h"
-void Mech::addPart(Parts p)
+void Mech::addPart(Parts* p)
 {
     maxWeapons = arms + legs;
     if(parts.size() == maxWeapons)

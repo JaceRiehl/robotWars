@@ -9,7 +9,7 @@ class PartsFactory
 public:
     enum Type{SMALL_ROCKET, SMALL_LASER, MEDIUM_ROCKET, MEDIUM_LASER, LARGE_ROCKET, LARGE_LASER};
     static Parts* getPart(Type);
-    Type type;
+    ~PartsFactory();
 
 private:
      static Parts* SmallRocket;
