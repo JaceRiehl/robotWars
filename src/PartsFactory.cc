@@ -66,4 +66,11 @@ if(MediumRocket != nullptr)
 if(LargeRocket != nullptr)
     delete LargeRocket;
 
+    SmallLaser = nullptr;
+    MediumLaser = nullptr;
+    LargeLaser = nullptr;
+    SmallRocket = nullptr;
+    MediumRocket = nullptr;
+    LargeRocket = nullptr;
+
 }

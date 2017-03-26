@@ -2,7 +2,7 @@
 
 void MechTurn::initalize()
 {
-
+    damage = 0;
 }
 
 void MechTurn::takeTurn(Mech& m1, Mech& m2)
@@ -15,4 +15,9 @@ void MechTurn::takeTurn(Mech& m1, Mech& m2)
 bool MechTurn::endTurn()
 {
     return true;
+}
+
+int MechTurn::getDamage()
+{
+    return damage;
 }

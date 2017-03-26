@@ -37,7 +37,6 @@
 			<Add option="-lcppunit" />
 		</Linker>
 		<Unit filename="include/Aggressive.h" />
-		<Unit filename="include/AggressiveTurn.h" />
 		<Unit filename="include/Mech.h" />
 		<Unit filename="include/MechBuilder.h" />
 		<Unit filename="include/MechTurn.h" />
@@ -45,11 +44,9 @@
 		<Unit filename="include/PartsFactory.h" />
 		<Unit filename="include/Programming.h" />
 		<Unit filename="include/RoundRobin.h" />
-		<Unit filename="include/RoundRobinTurn.h" />
 		<Unit filename="include/Turn.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Aggressive.cc" />
-		<Unit filename="src/AggressiveTurn.cc" />
 		<Unit filename="src/Mech.cc" />
 		<Unit filename="src/MechBuilder.cc" />
 		<Unit filename="src/MechTurn.cc" />
@@ -57,7 +54,6 @@
 		<Unit filename="src/PartsFactory.cc" />
 		<Unit filename="src/Programming.cc" />
 		<Unit filename="src/RoundRobin.cc" />
-		<Unit filename="src/RoundRobinTurn.cc" />
 		<Unit filename="src/Turn.cc" />
 		<Unit filename="test/AggressiveTest.cc" />
 		<Unit filename="test/AggressiveTest.h" />
@@ -65,6 +61,8 @@
 		<Unit filename="test/MechBuilderTest.h" />
 		<Unit filename="test/MechTest.cc" />
 		<Unit filename="test/MechTest.h" />
+		<Unit filename="test/MechTurnTest.cc" />
+		<Unit filename="test/MechTurnTest.h" />
 		<Unit filename="test/PartTest.cc" />
 		<Unit filename="test/PartTest.h" />
 		<Unit filename="test/PartsFactoryTest.cc" />

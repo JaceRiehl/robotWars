@@ -7,6 +7,7 @@ public:
     void initalize();
     void takeTurn(Mech&, Mech&);
     bool endTurn();
+    int getDamage();
 private:
 
 };

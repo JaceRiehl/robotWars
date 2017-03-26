@@ -15,7 +15,9 @@ CPPUNIT_TEST_SUITE_REGISTRATION( RoundRobinTest );
 
 	void RoundRobinTest::tearDown()
     {
-
+        delete p1;
+        delete p2;
+        delete p3;
 
     }
 

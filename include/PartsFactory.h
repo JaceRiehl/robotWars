@@ -24,7 +24,7 @@ public:
     /**
     *Class destructor
     */
-    ~PartsFactory();
+    virtual ~PartsFactory();
 
 private:
     /**
