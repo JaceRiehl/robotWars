@@ -13,6 +13,7 @@ class AggressiveTest : public CppUnit::TestFixture
     CPPUNIT_TEST_SUITE( AggressiveTest );
     CPPUNIT_TEST( testDamage);
     CPPUNIT_TEST( testRefreshRate );
+    CPPUNIT_TEST( updateRechargeTest);
 
     CPPUNIT_TEST_SUITE_END();
 
@@ -33,6 +34,10 @@ class AggressiveTest : public CppUnit::TestFixture
     * Tests that the refresh rates are working correctly
     */
     void testRefreshRate();
+    /**
+    *Tests that the weapons recharge times are updating
+    */
+    void updateRechargeTest();
 
 
     private:

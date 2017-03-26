@@ -40,3 +40,15 @@ string Mech::getStrategy()
     return fightingStyle->getName();
 }
 
+void Mech::updateArmor(int a)
+{
+    if(a <= armor)
+        armor = armor - a;
+    else
+        armor = 0;
+}
+
+void Mech::updateRecharge()
+{
+    fightingStyle->updateRecharge();
+}

@@ -29,19 +29,68 @@ CPPUNIT_TEST_SUITE_REGISTRATION( RoundRobinTest );
     void RoundRobinTest::testRefreshRate()
     {
          CPPUNIT_ASSERT_EQUAL(2, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(4, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(8, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(2, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(0, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(0, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(2, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(4, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(0, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(2, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(0, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(0, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(2, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(4, strategy.attack(parts));
+         strategy.updateRecharge();
          CPPUNIT_ASSERT_EQUAL(8, strategy.attack(parts));
+         strategy.updateRecharge();
+    }
+
+    void RoundRobinTest::testRechargeUpdate()
+    {
+         CPPUNIT_ASSERT_EQUAL(2, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(4, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(8, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(2, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(0, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(0, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(2, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(4, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(0, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(2, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(0, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(0, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(2, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(4, strategy.attack(parts));
+         strategy.updateRecharge();
+         CPPUNIT_ASSERT_EQUAL(8, strategy.attack(parts));
+         strategy.updateRecharge();
     }
 
