@@ -1,8 +1,10 @@
 #include "Aggressive.h"
 #include <iostream>
-int Aggressive::attack(vector<Parts> p)
+int Aggressive::attack(vector<Parts*> p)
 {
  int damage = 0;
+    if(p.size() == 0)
+        return damage;
     if(parts.size() == 0)
         parts = p;
 
@@ -25,7 +27,7 @@ int Aggressive::attack(vector<Parts> p)
     {
         if(rechargeTimes[i] == 0)
         {
-            if(damage < parts[i].getDamage())
+            if(damage < parts[i]->getDamage())
             {
             index = i;
             }
@@ -33,9 +35,14 @@ int Aggressive::attack(vector<Parts> p)
     }
     if(index != -1)
     {
-    damage = parts[index].getDamage();
-    rechargeTimes[index] = parts[index].getRechargeTime();
+    damage = parts[index]->getDamage();
+    rechargeTimes[index] = parts[index]->getRechargeTime();
     }
 
    return damage;
+}
+
+string Aggressive::getName()
+{
+    return name;
 }

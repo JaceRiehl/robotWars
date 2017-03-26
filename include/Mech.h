@@ -7,7 +7,9 @@
 #include "Parts.h"
 using namespace std;
 using std::runtime_error;
-
+/**
+*This is the class that encapsulates all parts of the mech
+*/
 class Mech
 {
 public:
@@ -15,11 +17,43 @@ public:
     *Class for the Builder
     */
     class MechBuilder;
+
     /**
     *Adds weapons to the arms
     *@param Programming pointer to a strategy style
     */
     void addPart(Parts*);
+
+    /**
+    *getter for the vector of weapons
+    */
+    vector<Parts*> getWeapons();
+
+    /**
+    *Call for attack in the given strategy
+    */
+    int attack();
+
+    /**
+    *getter for testing
+    */
+    int getArmor();
+
+    /**
+    *getter for testing
+    */
+    int getArms();
+
+    /**
+    *getter for testing
+    */
+    int getLegs();
+
+    /**
+    *getter for testing
+    */
+    string getStrategy();
+
 private:
     /**
     *Vector of weapons

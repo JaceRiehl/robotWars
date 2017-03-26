@@ -5,9 +5,9 @@ CPPUNIT_TEST_SUITE_REGISTRATION( RoundRobinTest );
 
     void RoundRobinTest::setUp()
     {
-        Parts p1(2,3);
-        Parts p2(4,6);
-        Parts p3(8,12);
+        p1 = new Parts(2,3);
+        p2 = new Parts(4,6);
+        p3 = new Parts(8,12);
         parts.push_back(p1);
         parts.push_back(p2);
         parts.push_back(p3);

@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-int RoundRobin::attack(vector<Parts> p)
+int RoundRobin::attack(vector<Parts*> p)
 {
     int damage = 0;
     if(parts.size() == 0)
@@ -27,8 +27,8 @@ int RoundRobin::attack(vector<Parts> p)
                 {
                     if(rechargeTimes[index] == 0)
                     {
-                        rechargeTimes[index] = parts[index].getRechargeTime();
-                        damage = parts[index].getDamage();
+                        rechargeTimes[index] = parts[index]->getRechargeTime();
+                        damage = parts[index]->getDamage();
                         index = (index + 1) % rechargeTimes.size();
 
                         break;
@@ -42,4 +42,9 @@ int RoundRobin::attack(vector<Parts> p)
 
    return damage;
 
+}
+
+string RoundRobin::getName()
+{
+    return name;
 }

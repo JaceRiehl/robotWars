@@ -53,6 +53,10 @@
 		<Unit filename="src/RoundRobin.cc" />
 		<Unit filename="test/AggressiveTest.cc" />
 		<Unit filename="test/AggressiveTest.h" />
+		<Unit filename="test/MechBuilderTest.cc" />
+		<Unit filename="test/MechBuilderTest.h" />
+		<Unit filename="test/MechTest.cc" />
+		<Unit filename="test/MechTest.h" />
 		<Unit filename="test/PartTest.cc" />
 		<Unit filename="test/PartTest.h" />
 		<Unit filename="test/PartsFactoryTest.cc" />
