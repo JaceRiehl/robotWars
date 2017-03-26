@@ -5,6 +5,9 @@
 int RoundRobin::attack(vector<Parts*> p)
 {
     int damage = 0;
+    if(p.size() == 0)
+        return damage;
+
     if(parts.size() == 0)
         parts = p;
 

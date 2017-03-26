@@ -59,22 +59,27 @@ private:
     *Vector of weapons
     */
     vector<Parts*> parts;
+
     /**
     *The Mechs armor
     */
     int armor;
+
     /**
     *Mechs number of legs
     */
     int legs;
+
     /**
     *Mechs number of arms
     */
     int arms;
+
     /**
     *Maximum number of weapons
     */
     int maxWeapons;
+
     /**
     *The Programming style
     */

@@ -3,7 +3,9 @@
 #include "Programming.h"
 #include <string>
 using namespace std;
-
+/**
+*Aggressive Fighting style where an available weapon with the highest damage is picked
+*/
 class Aggressive : public Programming
 {
 public:
@@ -13,6 +15,7 @@ public:
     *@return amount of damage
     */
     int attack(vector<Parts*>);
+
     /**
     *getter for the name
     *@return name

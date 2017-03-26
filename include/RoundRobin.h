@@ -7,6 +7,7 @@
 class RoundRobin : public Programming
 {
 public:
+
     /**
     *Allows the Mech to attack once
     *@param vector of parts
@@ -25,10 +26,11 @@ private:
     *Current index of the weapon
     */
     int index = 0;
+
     /**
     *Name of the strategy
     */
     string name = "RoundRobin";
 };
-#endif // AGGRESSIVE_H
+#endif
 

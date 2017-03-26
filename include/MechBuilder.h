@@ -44,14 +44,17 @@ public:
     *getter for testing
     */
     int getArmor();
+
     /**
     *getter for testing
     */
     int getArms();
+
     /**
     *getter for testing
     */
     int getLegs();
+
     /**
     *getter for testing
     */

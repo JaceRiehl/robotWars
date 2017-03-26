@@ -6,7 +6,9 @@
 #include <vector>
 
 #include <cppunit/extensions/HelperMacros.h>
-
+/**
+*RoundRobin behaviour test
+*/
 class RoundRobinTest : public CppUnit::TestFixture
 {
     CPPUNIT_TEST_SUITE( RoundRobinTest );

@@ -15,7 +15,7 @@ CPPUNIT_TEST_SUITE_REGISTRATION( MechBuilderTest );
 
     void MechBuilderTest::testConstructor()
     {
-        string strat = "RoundRobin";
+       string strat = "RoundRobin";
        Mech::MechBuilder b(s);
        b.setMediumMech();
        CPPUNIT_ASSERT_EQUAL(4, b.getArms());
