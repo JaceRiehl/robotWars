@@ -5,9 +5,9 @@ CPPUNIT_TEST_SUITE_REGISTRATION( AggressiveTest );
 
     void AggressiveTest::setUp()
     {
-        Parts p1(3,5);
-        Parts p2(6,10);
-        Parts p3(12,20);
+        p1 = new Parts(3,5);
+        p2 = new Parts(6,10);
+        p3 = new Parts(12,20);
         parts.push_back(p1);
         parts.push_back(p2);
         parts.push_back(p3);

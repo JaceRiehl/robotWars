@@ -34,9 +34,11 @@ class AggressiveTest : public CppUnit::TestFixture
 
 
     private:
-
+        Parts* p1;
+        Parts* p2;
+        Parts* p3;
         Aggressive strategy;
-        vector<Parts> parts;
+        vector<Parts*> parts;
 };
 
-#endif // TESTCOORDINATE_H
+#endif
