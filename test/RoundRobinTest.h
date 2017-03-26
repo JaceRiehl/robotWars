@@ -14,6 +14,7 @@ class RoundRobinTest : public CppUnit::TestFixture
     CPPUNIT_TEST_SUITE( RoundRobinTest );
     CPPUNIT_TEST( testDamage);
     CPPUNIT_TEST( testRefreshRate );
+    CPPUNIT_TEST( testRechargeUpdate);
 
     CPPUNIT_TEST_SUITE_END();
 
@@ -34,6 +35,11 @@ class RoundRobinTest : public CppUnit::TestFixture
     * Tests that the refresh rates are working correctly
     */
     void testRefreshRate();
+    /**
+    *Tests that the recharge times are being updates
+    */
+    void testRechargeUpdate();
+
 
 
     private:

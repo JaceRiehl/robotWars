@@ -18,11 +18,6 @@ int RoundRobin::attack(vector<Parts*> p)
             rechargeTimes[i] = 0;
     }
 
-    for(int i = 0; i < rechargeTimes.size(); i++)
-    {
-        if(rechargeTimes[i] > 0)
-        rechargeTimes[i] = rechargeTimes[i] - 1;
-    }
 
         int startingIndex = index;
 
@@ -50,4 +45,13 @@ int RoundRobin::attack(vector<Parts*> p)
 string RoundRobin::getName()
 {
     return name;
+}
+
+void RoundRobin::updateRecharge()
+{
+    for(int i = 0; i < rechargeTimes.size(); i++)
+    {
+        if(rechargeTimes[i] > 0)
+        rechargeTimes[i] = rechargeTimes[i] - 1;
+    }
 }

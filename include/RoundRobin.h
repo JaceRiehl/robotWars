@@ -21,6 +21,11 @@ public:
     */
     string getName();
 
+    /**
+    *Updates recharge times
+    */
+    void updateRecharge();
+
 private:
     /**
     *Current index of the weapon

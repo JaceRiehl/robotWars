@@ -21,6 +21,13 @@ public:
     *@return name
     */
     string getName();
+
+    /**
+    *Updates recharge times
+    */
+    void updateRecharge();
+
+
 private:
     /**
     *Name of the strategy

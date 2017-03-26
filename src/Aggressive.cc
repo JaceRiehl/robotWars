@@ -16,11 +16,6 @@ int Aggressive::attack(vector<Parts*> p)
             rechargeTimes[i] = 0;
     }
 
-    for(int i = 0; i < rechargeTimes.size(); i++)
-    {
-        if(rechargeTimes[i] > 0)
-        rechargeTimes[i] = rechargeTimes[i] - 1;
-    }
 
     int index = -1;
 
@@ -46,4 +41,13 @@ int Aggressive::attack(vector<Parts*> p)
 string Aggressive::getName()
 {
     return name;
+}
+
+void Aggressive::updateRecharge()
+{
+    for(int i = 0; i < rechargeTimes.size(); i++)
+    {
+        if(rechargeTimes[i] > 0)
+        rechargeTimes[i] = rechargeTimes[i] - 1;
+    }
 }

@@ -20,6 +20,11 @@ public:
     */
     virtual string getName() = 0;
 
+    /**
+    *Updates the recharge times
+    */
+    virtual void updateRecharge() = 0;
+
 protected:
     /**
     *Vector of weapons
@@ -30,6 +35,7 @@ protected:
     *Vector of rechage times
     */
     vector<int> rechargeTimes;
+
 
 
 

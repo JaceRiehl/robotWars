@@ -5,6 +5,8 @@
 #include <string>
 #include "Programming.h"
 #include "Parts.h"
+
+
 using namespace std;
 using std::runtime_error;
 /**
@@ -54,6 +56,17 @@ public:
     */
     string getStrategy();
 
+    /**
+    *Updates Mechs weapons recharge time
+    */
+    void updateRecharge();
+
+    /**
+    *Updates armor
+    */
+    void updateArmor(int);
+
+
 private:
     /**
     *Vector of weapons
@@ -84,6 +97,9 @@ private:
     *The Programming style
     */
     Programming* fightingStyle;
+
+
+
 
     /**
     *Constructor for Mech supplied by Mech builder
