@@ -11,6 +11,10 @@ class Programming
 {
 public:
     /**
+    *Destructor for progrmaming
+    */
+    virtual ~Programming() {}
+    /**
     *Declaration of attack
     */
     virtual int attack(vector<Parts*>) = 0;

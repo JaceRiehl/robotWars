@@ -15,7 +15,9 @@ CPPUNIT_TEST_SUITE_REGISTRATION( AggressiveTest );
 
 	void AggressiveTest::tearDown()
     {
-
+        delete p1;
+        delete p2;
+        delete p3;
 
     }
 

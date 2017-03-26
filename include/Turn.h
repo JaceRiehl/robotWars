@@ -6,7 +6,7 @@
 class Turn
 {
 public:
-    void runTurn(Mech&, Mech&);
+    bool runTurn(Mech&, Mech&);
 protected:
     virtual void initalize() = 0;
     virtual void takeTurn(Mech&, Mech&) = 0;

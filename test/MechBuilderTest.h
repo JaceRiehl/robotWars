@@ -27,9 +27,6 @@ class MechBuilderTest : public CppUnit::TestFixture
     *Tests that the value from the constructors is being properly assigned
     */
     void testConstructor();
-    /**
-    *Tests that the setters are setting the right values
-    */
 
 
 

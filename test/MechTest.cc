@@ -16,6 +16,11 @@ CPPUNIT_TEST_SUITE_REGISTRATION( MechTest );
 	void MechTest::tearDown()
     {
         delete s;
+        delete p1;
+        delete p2;
+        delete p3;
+        delete p4;
+        delete p5;
 
     }
 
