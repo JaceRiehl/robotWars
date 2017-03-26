@@ -7,7 +7,9 @@
 #include "Programming.h"
 
 #include <cppunit/extensions/HelperMacros.h>
-
+/**
+*Test for a Mech object
+*/
 class MechTest : public CppUnit::TestFixture
 {
     CPPUNIT_TEST_SUITE( MechTest );

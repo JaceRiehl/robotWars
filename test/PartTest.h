@@ -27,6 +27,7 @@ class PartTest : public CppUnit::TestFixture
 
 
     private:
+
        Parts* p1;
        Parts* p2;
        Parts* p3;

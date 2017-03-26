@@ -14,6 +14,7 @@ public:
     *Declaration of attack
     */
     virtual int attack(vector<Parts*>) = 0;
+
     /**
     *Get Name declaration
     */
@@ -24,6 +25,7 @@ protected:
     *Vector of weapons
     */
     vector<Parts*> parts;
+
     /**
     *Vector of rechage times
     */
