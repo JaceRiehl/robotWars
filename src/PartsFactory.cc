@@ -1,5 +1,5 @@
 #include "PartsFactory.h"
-#include "Parts.h"
+
 
 Parts* PartsFactory::SmallLaser = nullptr;
 Parts* PartsFactory::MediumLaser = nullptr;
@@ -8,6 +8,7 @@ Parts* PartsFactory::SmallRocket = nullptr;
 Parts* PartsFactory::MediumRocket = nullptr;
 Parts* PartsFactory::LargeRocket = nullptr;
 
+PartsFactory::PartsFactory() {}
 
  Parts* PartsFactory::getPart(Type t)
  {
@@ -51,7 +52,7 @@ Parts* PartsFactory::LargeRocket = nullptr;
      }
  }
 
- PartsFactory::~PartsFactory()
+PartsFactory::~PartsFactory()
 {
 if(SmallLaser != nullptr)
     delete SmallLaser;
