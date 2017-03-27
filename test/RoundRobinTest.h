@@ -15,6 +15,7 @@ class RoundRobinTest : public CppUnit::TestFixture
     CPPUNIT_TEST( testDamage);
     CPPUNIT_TEST( testRefreshRate );
     CPPUNIT_TEST( testRechargeUpdate);
+    CPPUNIT_TEST( testEmptyVector );
 
     CPPUNIT_TEST_SUITE_END();
 
@@ -39,7 +40,10 @@ class RoundRobinTest : public CppUnit::TestFixture
     *Tests that the recharge times are being updates
     */
     void testRechargeUpdate();
-
+    /**
+    *Tests that 0 damage will be returned when an empty vector is inputted
+    */
+    void testEmptyVector();
 
 
     private:

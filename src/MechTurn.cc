@@ -21,3 +21,4 @@ int MechTurn::getDamage()
 {
     return damage;
 }
+

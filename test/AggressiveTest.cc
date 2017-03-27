@@ -69,3 +69,9 @@ CPPUNIT_TEST_SUITE_REGISTRATION( AggressiveTest );
          strategy.updateRecharge();
     }
 
+    void AggressiveTest::testEmptyVector()
+    {
+        vector<Parts*> emptyParts;
+        CPPUNIT_ASSERT_EQUAL(0, strategy.attack(emptyParts));
+    }
+

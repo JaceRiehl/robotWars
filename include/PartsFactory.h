@@ -10,6 +10,11 @@ class PartsFactory
 {
 public:
     /**
+    *constructor for PartsFactory
+    */
+    PartsFactory();
+
+    /**
     *Enumeration for different weapons
     */
     enum Type{SMALL_ROCKET, SMALL_LASER, MEDIUM_ROCKET, MEDIUM_LASER, LARGE_ROCKET, LARGE_LASER};

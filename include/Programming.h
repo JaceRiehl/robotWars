@@ -41,8 +41,5 @@ protected:
     vector<int> rechargeTimes;
 
 
-
-
-
 };
 #endif // PROGRAMMING_H

@@ -96,3 +96,9 @@ CPPUNIT_TEST_SUITE_REGISTRATION( RoundRobinTest );
          strategy.updateRecharge();
     }
 
+    void RoundRobinTest::testEmptyVector()
+    {
+        vector<Parts*> emptyParts;
+        CPPUNIT_ASSERT_EQUAL(0, strategy.attack(emptyParts));
+    }
+

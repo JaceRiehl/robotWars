@@ -14,6 +14,7 @@ class AggressiveTest : public CppUnit::TestFixture
     CPPUNIT_TEST( testDamage);
     CPPUNIT_TEST( testRefreshRate );
     CPPUNIT_TEST( updateRechargeTest);
+    CPPUNIT_TEST( testEmptyVector);
 
     CPPUNIT_TEST_SUITE_END();
 
@@ -38,6 +39,10 @@ class AggressiveTest : public CppUnit::TestFixture
     *Tests that the weapons recharge times are updating
     */
     void updateRechargeTest();
+    /**
+    *Tests that 0 damage will be returned when an empty vector is inputted
+    */
+    void testEmptyVector();
 
 
     private:

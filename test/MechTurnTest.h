@@ -10,6 +10,9 @@
 
 #include <cppunit/extensions/HelperMacros.h>
 using namespace std;
+/**
+*Test for MechTurn
+*/
 class MechTurnTest : public CppUnit::TestFixture
 {
     CPPUNIT_TEST_SUITE( MechTurnTest );
@@ -19,7 +22,8 @@ class MechTurnTest : public CppUnit::TestFixture
     CPPUNIT_TEST( testRunTurn );
     CPPUNIT_TEST_SUITE_END();
 
-    public:
+public:
+
     /**
     * Sets up the Test values
     */

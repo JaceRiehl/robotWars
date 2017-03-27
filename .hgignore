@@ -7,4 +7,6 @@ syntax: glob
 *.depend
 *~
 *.o
+./coverage
 ValgrindOut.xml
+tests

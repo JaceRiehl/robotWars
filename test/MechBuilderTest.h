@@ -8,6 +8,9 @@
 
 #include <cppunit/extensions/HelperMacros.h>
 using namespace std;
+/**
+*Test for mech builder
+*/
 class MechBuilderTest : public CppUnit::TestFixture
 {
     CPPUNIT_TEST_SUITE( MechBuilderTest );

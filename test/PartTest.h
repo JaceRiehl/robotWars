@@ -3,7 +3,9 @@
 #include "Parts.h"
 
 #include <cppunit/extensions/HelperMacros.h>
-
+/**
+*Tests for Parts class
+*/
 class PartTest : public CppUnit::TestFixture
 {
     CPPUNIT_TEST_SUITE( PartTest );

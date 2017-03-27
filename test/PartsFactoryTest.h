@@ -3,6 +3,9 @@
 #include "Parts.h"
 #include "PartsFactory.h"
 
+/**
+*Test for the parts factory
+*/
 
 #include <cppunit/extensions/HelperMacros.h>
 
@@ -29,10 +32,14 @@ public:
 
 
 private:
-    PartsFactory factory;
+    PartsFactory* factory;
     Parts* p1;
     Parts* p2;
     Parts* p3;
+    Parts* p4;
+    Parts* p5;
+    Parts* p6;
+
 };
 
 #endif //PARTSFACTORYTEST_H
